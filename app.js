@@ -7,4 +7,5 @@ e.get("/",function(req,res)
 			}
 	);
 
-e.listen(5000);
+var p=process.env.port || 5000;
+e.listen(p);
